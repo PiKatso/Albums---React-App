@@ -6,7 +6,7 @@ import Header from './src/components/header'
 // Create a component
 const App = () => {
   return (
-    <Text>some text</Text>
+    <Header /> //self closing tag
   );
 };
 
