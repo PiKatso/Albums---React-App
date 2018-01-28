@@ -4,11 +4,9 @@ import { Text, AppRegistry } from 'react-native';
 import Header from './src/components/header'
 
 // Create a component
-const App = () => {
-  return (
-    <Header /> //self closing tag
-  );
-};
+const App = () => (
+  <Header headerText={'Albums!'} /> //self closing tag
+);
 
 // Render it to the device
 AppRegistry.registerComponent('albums', () => App);
