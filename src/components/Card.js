@@ -22,7 +22,7 @@ const styles = {
       width: 0,
       height: 2
     },
-    shadowOppacity: 0.1,
+    shadowOpacity: 0.1,
     shadowRadius: 2,
     marginLeft: 5,
     marginRight: 5,
