@@ -4,18 +4,18 @@ import { Image, Text, View } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 
-const AlbumDetail = (props) => {
+const AlbumDetail = ({ album }) => {
   return (
     <Card>
       <CardSection>
 
         <View>
-          <Image source={{ uri: props.album.thumbnail_image}} />
+          <Image source={{ uri: album.thumbnail_image }} />
         </View>
 
         <View style={styles.headerTextContainer}>
-          <Text>{props.album.title}</Text>
-          <Text>{props.album.artist}</Text>
+          <Text>{album.title}</Text>
+          <Text>{album.artist}</Text>
         </View>
 
       </CardSection>
