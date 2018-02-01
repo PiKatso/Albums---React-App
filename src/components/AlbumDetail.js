@@ -51,7 +51,7 @@ const styles = {
   },
   headerTextStyle: {
     fontSize: 18,
-    fontStyle: 'oblique'
+    fontWeight: '700'
   }
 };
 
