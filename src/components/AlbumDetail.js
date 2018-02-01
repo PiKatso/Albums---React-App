@@ -5,12 +5,13 @@ import Card from './Card';
 import CardSection from './CardSection';
 
 const AlbumDetail = ({ album }) => {
-  const { title, artist, thumbnail_image } = album;
+  const { title, artist, image, thumbnail_image } = album;
   const {
     headerImageContainer,
     headerTextContainer,
     headerTextStyle,
-    thumbnailContainerStyle
+    thumbnailContainerStyle,
+    albumArtworkStyle
   } = styles;
 
   return (
@@ -28,7 +29,13 @@ const AlbumDetail = ({ album }) => {
           <Text style={headerTextStyle}>{title}</Text>
           <Text>{artist}</Text>
         </View>
+      </CardSection>
 
+      <CardSection>
+        <Image
+          style={albumArtworkStyle}
+          source={{ uri: image }}
+          />
       </CardSection>
     </Card>
   );
@@ -52,6 +59,11 @@ const styles = {
   headerTextStyle: {
     fontSize: 18,
     fontWeight: '700'
+  },
+  albumArtworkStyle: {
+    flex: 1,
+    height: 300,
+    width: null
   }
 };
 
