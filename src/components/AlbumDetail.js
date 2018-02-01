@@ -17,7 +17,6 @@ const AlbumDetail = ({ album }) => {
   return (
     <Card>
       <CardSection>
-
         <View style={thumbnailContainerStyle}>
           <Image
             style={headerImageContainer}
@@ -35,7 +34,7 @@ const AlbumDetail = ({ album }) => {
         <Image
           style={albumArtworkStyle}
           source={{ uri: image }}
-          />
+        />
       </CardSection>
     </Card>
   );
